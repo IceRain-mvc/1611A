@@ -1,5 +1,12 @@
 <!--pages/day05_04/day05_04.wxml-->
 <text>pages/day05_04/day05_04.wxml</text>
-<navigator open-type="navigateBack" delta="3">
-  <button>返回</button>
+<input placeholder="请输入跳转的层数" bindinput="input" type='number'></input>
+<navigator open-type="navigateBack" delta="{{num}}">
+  <button>
+    返回页面
+  </button>
 </navigator>
+
+<view wx:for="{{cityList}}">
+  <view bindtap='clickCity' data-item='{{item}}'>{{item}}</view>
+</view>

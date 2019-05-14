@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    name:"小魔仙",
+    age:20,
+    obj:{
+      title:"京剧",
+      address:"中国戏剧学院"
+    }
   },
 
   /**
@@ -73,8 +78,9 @@ Page({
   },
 
   tiao(){
+    let objString = JSON.stringify(this.data.obj);
     wx.navigateTo({
-      url:"/pages/day05_02/day05_02"
+      url: "/pages/day05_02/day05_02?name=" + this.data.name + "&age=" + this.data.age + "&obj=" + objString
     })
   }
 })
