@@ -1,5 +1,9 @@
 {
   "pages": [
+    "pages/day05/day05",
+    "pages/day05_02/day05_02",
+    "pages/day05_03/day05_03",
+    "pages/day05_04/day05_04",
     "pages/zhoukao1/index",
     "pages/day04/day04",
     "pages/day03/day03",

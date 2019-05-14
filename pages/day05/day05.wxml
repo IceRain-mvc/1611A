@@ -1,0 +1,4 @@
+<!--pages/day05/day05.wxml-->
+<text>pages/day05/day05.wxml</text>
+
+<button bindtap='tiao'>跳转页面</button>

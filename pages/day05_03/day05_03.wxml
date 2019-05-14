@@ -1,0 +1,5 @@
+<!--pages/day05_03/day05_03.wxml-->
+<text>pages/day05_03/day05_03.wxml</text>
+<navigator url="/pages/day05_04/day05_04">
+  <button>跳转到4</button>
+</navigator>

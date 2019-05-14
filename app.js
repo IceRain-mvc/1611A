@@ -1,7 +1,10 @@
 //app.js
 //App({}) 
 App({
+  // 程序加载的时候 
+  // 获取数据 每个页面都要用到
   onLaunch: function () {
+    console.log("onLaunch")
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -33,6 +36,18 @@ App({
         }
       }
     })
+  },
+  // 运行状态:
+  // 1:第一次进来
+  // 2:热启动
+  onShow(){
+    console.log("onShow")
+  },
+
+  // 进入后台:
+  // 1000 保存数据 
+  onHide(){
+    console.log("onHide")
   },
   globalData: {
     food:"香蕉",
