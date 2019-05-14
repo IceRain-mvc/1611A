@@ -1,0 +1,16 @@
+/* pages/day02/day02.wxss */
+
+.scroll{
+    height: 400rpx
+}
+.q1{
+  width: 100rpx;
+  height:100rpx;
+  background-color: red
+}
+
+.q2{
+  width: 100rpx;
+  height:100rpx;
+  background-color: green
+}

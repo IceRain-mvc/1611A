@@ -1,0 +1,18 @@
+<!--pages/day02_02/index.wxml-->
+<template name="foodA">
+  <view bindtap='click' data-name='{{name}}'>
+    <text>{{name}}</text>
+  </view>
+</template>
+
+<template name="foodB">
+  <view bindtap='click' data-name='{{name}}'>{{name}}</view>
+</template>
+
+<template is="food"></template>
+
+<view>
+  <block wx:for="{{[{name:'饺子'},{name:'包子'},{name:'麻辣烫'}]}}">
+    <template is="{{item%2===0?'foodA':'foodB'}}" data="{{...item}}"></template>
+  </block>
+</view>

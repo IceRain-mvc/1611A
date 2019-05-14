@@ -1,0 +1,6 @@
+<!--components/child/Child.wxml-->
+<text>components/child/Child.wxml</text>
+<view>我是子组件啦啦啦啦啦啦啊</view>
+
+<view>我喜欢的历史人物是:{{propParentToChild}}</view>
+<button type='primary' bindtap='parseValueToparent'>向父组件传值</button>

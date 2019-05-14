@@ -1,0 +1,16 @@
+/* components/tabtop/taptop.wxss */
+.iconClass{
+  width: 91rpx;
+  height: 102rpx;
+}
+.text{
+  font-size: 20rpx;
+  color: #ffffff
+}
+.border{
+  width: 0;
+  height: 0;
+  border: 20rpx solid transparent;
+  border-bottom: 20rpx solid #ffffff;
+  margin: 0 auto
+}

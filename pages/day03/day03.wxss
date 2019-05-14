@@ -1,0 +1,13 @@
+/* pages/day03/day03.wxss */
+.btn{
+  display: inline-block;
+  width:300rpx;
+
+}
+
+.box_btn{
+  text-align: center
+}
+.checkBox{
+  display: block
+}

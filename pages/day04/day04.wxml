@@ -1,0 +1,5 @@
+<!--pages/day04/day04.wxml-->
+<text>pages/day04/day04.wxml</text>
+<child-child propParentToChild="{{name}}" bindchildEvent="receiver"></child-child>
+<view>{{childValue}}</view>
+

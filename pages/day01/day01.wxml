@@ -1,0 +1,20 @@
+
+<!-- react:{}
+     vue {{}}
+     wx:for
+     wx:if
+     bindtap
+     bindchange
+ -->
+<view>{{name}}</view>
+<view>
+  <block wx:for="{{list}}" wx:for-item="aaa" wx:key="index">
+   <!-- item :默认 -->
+    <view>{{aaa.name}} {{index}}
+      <button class='aaa' bindtap='haha' data-child='{{index}}'>{{aaa.name}}</button>
+    </view>
+  </block> 
+  <text>
+    {{text}}
+  </text>
+</view>

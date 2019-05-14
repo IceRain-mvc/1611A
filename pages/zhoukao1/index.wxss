@@ -1,0 +1,21 @@
+/* pages/zhoukao1/index.wxss */
+
+.scrollClass{
+  background-color: #201D1D;
+  height: 200rpx;
+  width: 100%;
+  text-align: center
+}
+
+.nav{
+  display: flex
+}
+
+.top_item{
+  padding: 20rpx 50rpx
+}
+
+.vip{
+  color: red;
+  font-size: 40rpx
+}

@@ -1,0 +1,17 @@
+<scroll-view scroll-x class='scrollClass' scroll-with-animation>
+  <view class='nav'>
+    <block wx:for="{{tabList}}" wx:key="index">
+      <tabtop bindtap="clickItem" data-index="{{index}}" class="top_item" iconPath="{{item.iconPath}}" showDot="{{item.id===selectIndex}}" text="{{item.text}}"></tabtop>
+    </block>
+  </view>
+</scroll-view>
+
+<swiper bindchange="swiperChange" style='height:800rpx' current="{{selectIndex}}">
+  <block wx:for="{{tabList}}" wx:key="index">
+    <swiper-item>
+      <import src="content.wxml" />
+      <template is="content" data="{{...obj}}" />
+    </swiper-item>
+  </block>
+  
+</swiper>

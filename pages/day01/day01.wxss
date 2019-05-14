@@ -1,0 +1,5 @@
+/* pages/day01/day01.wxss */
+
+.aaa{
+  width: 300rpx
+}

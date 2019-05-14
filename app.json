@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/zhoukao1/index",
+    "pages/day04/day04",
+    "pages/day03/day03",
+    "pages/day02_02/index",
+    "pages/day02/day02",
+    "pages/index/index",
+    "pages/day01/day01",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#201D1D",
+    "navigationBarTitleText": "会员中心",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/day02/day02",
+        "text": "首页",
+        "iconPath": "images/icon_seo.png",
+        "selectedIconPath": "images/icon_seo_HL.png"
+      },
+      
+      {
+        "pagePath": "pages/day01/day01",
+        "text": "昨天",
+        "iconPath": "images/icon_speed.png",
+        "selectedIconPath": "images/icon_speed_HL.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+
+<image class='iconClass' src="{{iconPath}}"></image>
+<view class='text'>{{text}}</view>
+<view class='border' wx:if="{{showDot}}"></view>
+
+
