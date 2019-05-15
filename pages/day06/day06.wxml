@@ -1,0 +1,9 @@
+<!--pages/day06/day06.wxml-->
+<text>pages/day06/day06.wxml</text>
+<child-life></child-life>
+
+<picker bindchange='picker' value='{{index}}' range='{{array}}'>
+  <view>
+    你选择的城市是:{{array[index]}}
+  </view>
+</picker>
