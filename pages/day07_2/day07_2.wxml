@@ -1,0 +1,10 @@
+<!--pages/day07_2/day07_2.wxml-->
+
+<view>
+  <block wx:for="{{content}}" wx:key="index">
+    <view>
+      <image src='{{item.content.object.photo80}}'></image>
+      <view>{{item.content.object.name}}</view>
+    </view>
+  </block>
+</view>
