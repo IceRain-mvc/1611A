@@ -1,0 +1,12 @@
+<!--pages/day06_03/day06_3.wxml-->
+<text>pages/day06_03/day06_3.wxml</text>
+
+<button bindtap='getRequest' type='primary'>请求数据</button>
+
+<view>
+  <block wx:for="{{content}}">
+    <image src='{{item.content.object.photo80}}'></image>
+    <view></view>
+    <text>{{item.content.object.name}}</text>
+  </block>
+</view> 

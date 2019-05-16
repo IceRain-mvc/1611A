@@ -1,0 +1,10 @@
+<!--pages/day07/day07.wxml-->
+<view>请点击下图中 {{first_img_obj.imageName}} 获取验证码</view>
+<image class='refreah_icon' src='/images/refresh.png'></image>
+
+<view>
+  <block wx:for="{{first_img_obj.values}}" wx:key="index">
+    <image bindtap='clickItem' data-index='{{index}}' class='refreah_icon' src='https://auth_services.teambition.com/captcha/image?uid={{first_img_obj.uid}}&lang=zh&index={{index}}'></image>
+  </block>
+</view>
+

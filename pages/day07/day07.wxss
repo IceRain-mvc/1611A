@@ -1,0 +1,7 @@
+/* pages/day07/day07.wxss */
+
+.refreah_icon{
+  width: 80rpx;
+  height: 80rpx;
+  padding: 0 20rpx;
+}
