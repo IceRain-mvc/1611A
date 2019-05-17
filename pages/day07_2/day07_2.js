@@ -1,4 +1,6 @@
 // pages/day07_2/day07_2.js
+
+import wxRequest from '../../utils/wxRequest.js'
 Page({
 
   /**
@@ -6,24 +8,34 @@ Page({
    */
   data: {
     offset:0,
-    limit:20
+    limit:20,
+    content:[]
   },
 
   //1:关键字  2:offset  3:limit
   requestData(q, offset, limit){
-    wx.request({
-      url: 'https://www.xiachufang.com/juno/weapp/v2/search/universal_search.json?q=' + q,
-      data: {
-        offset: offset,
-        limit: limit
-      },
-      success: (res) => {
-        this.setData({
-          content: res.data.content.content
-        })
-      }
-    })
+    // wx.request({
+    //   url: 'https://www.xiachufang.com/juno/weapp/v2/search/universal_search.json?q=' + q,
+    //   data: {
+    //     offset: offset,
+    //     limit: limit
+    //   },
+    //   success: (res) => {
+    //     this.setData({
+    //       content: res.data.content.content
+    //     })
+    //   }
+    // })
 
+    let obj = {
+      url:"https://www.xiachufang.com/juno/weapp/v2/search/universal_search.json?q=泡面",
+      data:{},
+    }
+    wxRequest(obj,function(res){
+      this.setData({
+        content:res.content.content
+      })
+    },this,1)
   },
 
   /**
