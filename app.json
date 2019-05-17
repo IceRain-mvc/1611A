@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/day07_2/day07_2",
     "pages/day08/day08",
+    "pages/day07_2/day07_2",
     "pages/day07/day07",
     "pages/day06_03/day06_3",
     "pages/day06_02/day06_2",
@@ -35,7 +35,6 @@
         "iconPath": "images/icon_seo.png",
         "selectedIconPath": "images/icon_seo_HL.png"
       },
-      
       {
         "pagePath": "pages/day01/day01",
         "text": "昨天",

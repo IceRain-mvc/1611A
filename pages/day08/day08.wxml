@@ -1,2 +1,34 @@
-<!--pages/day08/day08.wxml-->
-<text>pages/day08/day08.wxml</text>
+<view>
+  <view class='top'>
+    <view bindtap='changeTab' data-index='0' class='{{flag?"normal":"select"}}'>公共科目</view>
+    <view bindtap='changeTab' data-index='1' class='{{flag?"select":"normal"}}'>专业科目</view>
+  </view>
+  <view>
+    <scroll-view scroll-y hidden='{{flag}}' class='main'>
+      <checkbox-group bindchange="changeChecked1">
+        <label wx:for='{{public}}' wx:key="index">
+          <view class='item'>
+            <text>{{item.name}}</text>
+            <checkbox value='{{index}}'></checkbox>
+          </view>
+        </label>
+      </checkbox-group>
+
+    </scroll-view>
+
+     <scroll-view scroll-y hidden='{{!flag}}' class='main'>
+      <checkbox-group bindchange="changeChecked2">
+        <label wx:for='{{major}}' wx:key="index">
+          <view class='item'>
+            <text>{{item.name}}</text>
+            <checkbox value='{{index}}'></checkbox>
+          </view>
+        </label>
+      </checkbox-group>
+
+    </scroll-view>
+  </view>
+  <view class='bottom'>
+    <button type='primary' bindtap='save'>保存</button>
+  </view>
+</view>

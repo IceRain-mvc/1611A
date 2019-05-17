@@ -1,1 +1,52 @@
 /* pages/day08/day08.wxss */
+
+.bottom {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 90rpx;
+}
+
+.top {
+  display: flex;
+  justify-content: space-around;
+  height: 80rpx;
+  background-color: #cfe;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  align-items: center;
+  z-index: 99;
+}
+
+.item {
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 20rpx;
+}
+
+.item text {
+  flex: 9;
+}
+
+.item checkbox {
+  flex: 1;
+}
+
+.main {
+  position: absolute;
+  top: 80rpx;
+  bottom: 90rpx;
+}
+
+.normal {
+  padding-bottom: 10rpx;
+  border-bottom: 5rpx solid transparent;
+}
+
+.select {
+  color: #4775f6;
+  padding-bottom: 10rpx;
+  border-bottom: 5rpx solid #4775f6;
+}

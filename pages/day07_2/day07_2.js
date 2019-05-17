@@ -28,8 +28,10 @@ Page({
     // })
 
     let obj = {
-      url:"https://www.xiachufang.com/juno/weapp/v2/search/universal_search.json?q=泡面",
-      data:{},
+      url: "https://www.xiachufang.com/juno/weapp/v2/search/universal_search.json?q=" + q,
+      data:{
+        offset, limit
+      },
     }
     wxRequest(obj,function(res){
       this.setData({
