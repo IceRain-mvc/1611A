@@ -1,12 +1,11 @@
 /* pages/day11/index.wxss */
 
-.scrollView{
+.scrollView {
   height: 250rpx;
   white-space: nowrap;
-  
 }
 
-.item{
+.item {
   margin: 20rpx;
   border-radius: 20rpx;
   width: 400rpx;
@@ -14,31 +13,67 @@
   display: inline-block;
 }
 
-.select{
+.select {
   border: 10rpx solid black;
 }
 
-
-.normal{
+.normal {
   border: 10rpx solid transparent;
 }
 
-.card{
-
+.card {
   display: flex;
   flex-wrap: wrap;
 }
 
-.card_item{
+.card_item {
   width: 40%;
   margin: 20rpx;
   height: 200rpx;
-  border: 2rpx solid #cccccc
+  position: relative;
 }
 
-.add{
+.add {
   display: inline-block;
-  background-color: #cccccc;
+  background-color: #ccc;
   width: 100rpx;
-  text-align: center
+  text-align: center;
+}
+
+.count {
+  position: absolute;
+  top: -25rpx;
+  right: -25rpx;
+  border-radius: 50%;
+  background-color: green;
+  width: 50rpx;
+  height: 50rpx;
+  display: inline-block;
+  color: #fff;
+  text-align: center;
+}
+
+.card_select {
+  border: 4rpx solid green;
+}
+
+.card_normal {
+  border: 4rpx solid #ccc;
+}
+
+
+.bottom{
+
+  height: 150rpx;
+  background-color: #cccccc;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+
+.bottom button{
+  display: inline-block;
+  width: 200rpx;
 }

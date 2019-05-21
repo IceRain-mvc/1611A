@@ -1,0 +1,7 @@
+<!--pages/day11_02/index.wxml-->
+<text>pages/day11_02/index.wxml</text>
+
+<view wx:for="{{arrSave}}">
+  <view>{{item.name}}</view>
+  <view>{{item.count}}</view>
+</view>

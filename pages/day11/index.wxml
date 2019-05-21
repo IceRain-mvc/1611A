@@ -6,7 +6,7 @@
 
 <view class='card'>
   <block wx:for="{{cards}}" wx:key="index">
-    <view class='card_item'>
+    <view class='card_item {{item.count>0?"card_select":"card_normal"}}' >
       <view>
         {{item.name}}
       </view>
@@ -14,7 +14,15 @@
         {{item.price}}
       </view>
       <text bindtap='add' data-index='{{index}}' class='add'>+</text>
-      <text>{{item.count}}</text>
+       <text bindtap='sub' wx:if="{{item.count>0}}" data-index='{{index}}' class='add'>-</text>
+      <text wx:if="{{item.count>0}}" class='count'>{{item.count}}</text>
     </view>
   </block>
+</view>
+
+
+<view class='bottom'>
+  <view>总价:{{total.price}}</view>
+  <view>总份数:{{total.count}}</view>
+  <button bindtap='btn_buy'>购买</button>
 </view>
