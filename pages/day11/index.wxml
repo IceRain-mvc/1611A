@@ -1,0 +1,20 @@
+<scroll-view scroll-x class='scrollView'>
+  <block wx:for="{{lists}}" wx:key="index">
+    <view bindtap='clickTop' data-index='{{index}}' class='item {{selectIndex===item.id?"select":"normal"}}' style='{{item.style}}'></view>
+  </block>
+</scroll-view>
+
+<view class='card'>
+  <block wx:for="{{cards}}" wx:key="index">
+    <view class='card_item'>
+      <view>
+        {{item.name}}
+      </view>
+      <view>
+        {{item.price}}
+      </view>
+      <text bindtap='add' data-index='{{index}}' class='add'>+</text>
+      <text>{{item.count}}</text>
+    </view>
+  </block>
+</view>

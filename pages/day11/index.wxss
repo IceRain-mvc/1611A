@@ -1,0 +1,44 @@
+/* pages/day11/index.wxss */
+
+.scrollView{
+  height: 250rpx;
+  white-space: nowrap;
+  
+}
+
+.item{
+  margin: 20rpx;
+  border-radius: 20rpx;
+  width: 400rpx;
+  height: 200rpx;
+  display: inline-block;
+}
+
+.select{
+  border: 10rpx solid black;
+}
+
+
+.normal{
+  border: 10rpx solid transparent;
+}
+
+.card{
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_item{
+  width: 40%;
+  margin: 20rpx;
+  height: 200rpx;
+  border: 2rpx solid #cccccc
+}
+
+.add{
+  display: inline-block;
+  background-color: #cccccc;
+  width: 100rpx;
+  text-align: center
+}
